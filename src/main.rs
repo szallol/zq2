@@ -1,3 +1,8 @@
+pub mod config;
+
+use config::Config;
+
 fn main() {
-    println!("Hello, world!");
+    let config = Config::from_args();
+    dbg!(config);
 }
